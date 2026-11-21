@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Đinh Hải Đăng</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; scroll-behavior: smooth; }
+    body { font: 16px/1.6 Arial, sans-serif; color: #142d50; }
+    header, footer { padding: 20px 9%; display: flex; justify-content: space-between; align-items: center; }
+    header { position: sticky; top: 0; background: white; box-shadow: 0 2px 12px #0001; }
+    .logo, footer strong { color: #1769d2; font-weight: bold; }
+    nav { display: flex; gap: 24px; }
+    nav a, footer a { color: #314767; text-decoration: none; }
+    section { padding: 70px 9%; }
+    .hero { display: flex; justify-content: space-between; align-items: center; gap: 40px; background: linear-gradient(135deg,#eaf3ff,#f7faff); }
+    .hero-copy { max-width: 650px; }
+    .eyebrow { color: #2374df; font-size: 13px; font-weight: bold; letter-spacing: 2px; }
+    h1 { margin: 12px 0; font-size: clamp(40px,6vw,64px); }
+    h2 { margin: 8px 0 20px; color: #2374df; }
+    .hero p, .goal p { margin: 8px 0; color: #526985; }
+    .button { display: inline-block; margin: 20px 10px 0 0; padding: 12px 20px; border-radius: 12px; color: white; background: #1769d2; text-decoration: none; }
+    .avatar { width: 300px; height: 330px; display: grid; place-items: center; border-radius: 25px; background: #dcebff; color: #37699f; font-weight: bold; }
+    .info-grid, .skill-list, .project-list, .hobby-list { display: grid; gap: 24px; }
+    .info-grid, .hobby-list { grid-template-columns: repeat(2,1fr); }
+    .skill-list { grid-template-columns: repeat(4,1fr); }
+    .project-list { grid-template-columns: repeat(2,1fr); }
+    .info-card, .skill-card, .project-card, .hobby-card { padding: 24px; border: 1px solid #dce8f6; border-radius: 16px; background: white; }
+    .info-card { min-height: 190px; border-color: #222; }
+    .info-icon { font-size: 30px; }
+    .info-card h3, .project-card h3 { margin: 5px 0; }
+    .info-card p { color: #111; }
+    .learning, .hobbies { background: #f5f9ff; }
+    .project-card { overflow: hidden; box-shadow: 0 8px 20px #12345a12; }
+    .project-card p, .skill-card p, .hobby-card p { margin: 8px 0; color: #526985; }
+    .tag { display: inline-block; margin: 5px 4px 0 0; padding: 4px 10px; border-radius: 7px; color: #1769d2; background: #eaf3ff; font-size: 13px; }
+    footer { border-top: 1px solid #dce8f6; color: #6b809b; }
+    @media (max-width: 800px) {
+      nav { gap: 12px; }
+      .hero { flex-direction: column; text-align: center; }
+      .skill-list { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 600px) {
+      header, footer { padding: 18px 6%; }
+      nav a:not(:last-child) { display: none; }
+      section { padding: 55px 6%; }
+      .info-grid, .skill-list, .project-list, .hobby-list { grid-template-columns: 1fr; }
+      .avatar { width: 100%; max-width: 300px; }
+      footer { align-items: flex-start; flex-direction: column; gap: 8px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">Đ.H.Đ.</div>
+    <nav>
+      <a href="#home">Trang chủ</a>
+      <a href="#about">Giới thiệu</a>
+      <a href="#projects">Dự án</a>
+      <a href="#hobbies">Sở thích</a>
+      <a href="mailto:hidang818@gmail.com">Liên hệ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">XIN CHÀO, MÌNH LÀ</div>
+        <h1>Đinh Hải Đăng</h1>
+        <h2>Sinh viên Công nghệ thông tin</h2>
+        <p>Yêu thích công nghệ, sáng tạo và khám phá điều mới.</p>
+        <p>Luôn học hỏi và phát triển bản thân mỗi ngày.</p>
+        <a class="button" href="mailto:hidang818@gmail.com">Liên hệ với mình</a>
+        <a class="button" href="#about">Tìm hiểu thêm</a>
+      </div>
+      <div class="avatar">ẢNH CỦA BẠN</div>
+    </section>
+
+    <section id="about">
+      <div class="eyebrow">01 / GIỚI THIỆU</div>
+      <h2>Một chút về mình</h2>
+      <div class="info-grid">
+        <article class="info-card">
+          <div class="info-icon">♙</div>
+          <h3>Thông tin cá nhân</h3>
+          <p>Họ và tên: Đinh Hải Đăng</p>
+          <p>Năm sinh: 01/07/2007</p>
+          <p>Trường học: Đại học Vinh</p>
+          <p>Ngành học: Công nghệ thông tin</p>
+        </article>
+        <article class="info-card">
+          <div class="info-icon">♡</div>
+          <h3>Sở thích</h3>
+          <p>Âm nhạc · Chơi thể thao</p>
+          <p>Nấu ăn · Du lịch · Công nghệ </p>
+        </article>
+        <article class="info-card">
+          <div class="info-icon">✓</div>
+          <h3>Tính cách</h3>
+          <p>Hòa đồng · Năng động</p>
+          <p>Học tập · Có trách nhiệm</p>
+        </article>
+        <article class="info-card">
+          <div class="info-icon">◎</div>
+          <h3>Mục tiêu</h3>
+          <p>Phát triển bản thân · Tích lũy kiến thức</p>
+          <p>Chuẩn bị cho tương lai</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="learning">
+      <div class="eyebrow">02 / HỌC TẬP</div>
+      <h2>Kiến thức mình đang phát triển</h2>
+      <div class="skill-list">
+        <article class="skill-card"><h3>Lập trình</h3><p>Tư duy và giải quyết vấn đề.</p></article>
+        <article class="skill-card"><h3>Thiết kế website</h3><p>Xây dựng giao diện dễ dùng.</p></article>
+        <article class="skill-card"><h3>Cơ sở dữ liệu</h3><p>Tổ chức và xử lý dữ liệu.</p></article>
+        <article class="skill-card"><h3>Phát triển ứng dụng</h3><p>Tìm hiểu công nghệ mới.</p></article>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="eyebrow">03 / DỰ ÁN</div>
+      <h2>Những dự án nổi bật</h2>
+      <div class="project-list">
+        <article class="project-card">
+          <h3>Website bán hàng</h3>
+          <p>Cửa hàng trực tuyến có giỏ hàng và trang chi tiết sản phẩm.</p>
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </article>
+        <article class="project-card">
+          <h3>Website giới thiệu bản thân</h3>
+          <p>Giới thiệu thông tin cá nhân, kỹ năng, sở thích và dự án.</p>
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="hobbies" id="hobbies">
+      <div class="eyebrow">04 / SỞ THÍCH</div>
+      <h2>Những điều mình yêu thích</h2>
+      <div class="hobby-list">
+        <article class="hobby-card"><h3>Hoạt động</h3><p>Thể thao và các hoạt động giúp cân bằng cuộc sống.</p></article>
+        <article class="hobby-card"><h3>Sở thích cá nhân</h3><p>Công nghệ, âm nhạc, du lịch và khám phá điều mới.</p></article>
+      </div>
+    </section>
+
+    <section class="goal">
+      <div class="eyebrow">05 / ĐỊNH HƯỚNG</div>
+      <h2>Không ngừng học hỏi và tiến về phía trước</h2>
+      <p>Mình mong muốn phát triển kiến thức Công nghệ thông tin và tạo ra những sản phẩm hữu ích.</p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Đ.H.Đ.</strong>
+    <span>Cảm ơn bạn đã ghé thăm portfolio.</span>
+    <a href="mailto:hidang818@gmail.com">hidang818@gmail.com</a>
+  </footer>
+</body>
+</html>
